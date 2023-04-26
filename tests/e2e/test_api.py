@@ -33,7 +33,7 @@ def test_happy_path_returns_201_and_allocated_batch(test_client):
     # )
     # post_to_add_batch(
     #     test_client, earlybatch, sku, 100, datetime.strptime("2011-01-01", "%Y-%m-%d")
-    # )
+    # ))
     post_to_add_batch(test_client, laterbatch, sku, 100, "2011-01-02")
     post_to_add_batch(test_client, earlybatch, sku, 100, "2011-01-01")
     post_to_add_batch(test_client, otherbatch, othersku, 100, None)
